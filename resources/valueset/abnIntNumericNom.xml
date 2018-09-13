@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="abnInt-NumericNom"/>
+  <id value="abnIntNumericNom"/>
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
   </meta>
-  <url value="http://hl7.org/fhir/fpar/ValueSet/abnIntNumericNom"/>
+  <url value="http://hl7.org/fhir/hspc/ValueSet/abnIntNumericNom"/>
   <version value="0.01"/>
   <name value="Abnormal Interpretation Numeric Nom"/>
   <status value="draft"/>

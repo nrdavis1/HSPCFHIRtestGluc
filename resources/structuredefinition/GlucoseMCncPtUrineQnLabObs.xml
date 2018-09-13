@@ -70,7 +70,7 @@
 			<binding>
 				<strength value="preferred"/>
 				<valueSetReference>
-					<reference value="http://hl7.org/fhir/hspc/ValueSet/abnInt-NumericNom"/>
+					<reference value="http://hl7.org/fhir/hspc/ValueSet/abnIntNumericNom"/>
 				</valueSetReference>
 			</binding>
         </element>
@@ -242,7 +242,7 @@
             <binding>
                 <strength value="preferred"/>
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/hspc/ValueSet/deltaFlag-numericNom"/>
+                    <reference value="http://hl7.org/fhir/hspc/ValueSet/deltaFlagnumericNom"/>
                 </valueSetReference>
             </binding>
         </element>

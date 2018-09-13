@@ -4,7 +4,7 @@
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
   </meta>
-  <url value="http://hl7.org/fhir/fpar/ValueSet/LabNullFlavor"/>
+  <url value="http://hl7.org/fhir/hspc/ValueSet/LabNullFlavor"/>
   <version value="0.01"/>
   <name value="HSPC Lab Null Flavor"/>
   <status value="draft"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hspc-practitioner"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-practitioner"/>
+  <url value="http://hl7.org/fhir/hspc/StructureDefinition/hspc-practitioner"/>
   <name value="Healthcare Services Platform Consortium Practitioner Profile"/>
   <status value="draft"/>
   <date value="2017-05-10"/>

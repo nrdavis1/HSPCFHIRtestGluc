@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hspc-organization"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-organization"/>
+  <url value="http://hl7.org/fhir/hspc/StructureDefinition/hspc-organization"/>
   <version value="2.0.0"/>
   <name value="HSPC Organization Profile"/>
   <status value="draft"/>

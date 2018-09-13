@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="deltaFlag-numericNom"/>
+  <id value="deltaFlagnumericNom"/>
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
   </meta>
-  <url value="http://hl7.org/fhir/fpar/ValueSet/deltaFlagnumericNom"/>
+  <url value="http://hl7.org/fhir/hspc/ValueSet/deltaFlagnumericNom"/>
   <version value="0.01"/>
   <name value="Abnormal Interpretation Numeric Nom"/>
   <status value="draft"/>
@@ -38,9 +38,6 @@
         <code value="W"/>
         <display value="Worse"/>
       </concept>
-    </include>
-    <include>
-      <system value="http://hl7.org/fhir/fpar/CodeSystem/deltaFlag-numericNom"/>
     </include>
   </compose>
 </ValueSet>
