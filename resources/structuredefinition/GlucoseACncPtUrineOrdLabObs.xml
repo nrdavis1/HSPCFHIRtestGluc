@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="GlucoseACncPtUrineOrdLabObs"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/GlucoseACncPtUrineOrdLabObs"/>
+    <name value="Glucose [Mass/volume] in Blood"/>
+    <status value="draft"/>
+    <date value="2018-08-20"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="GlucoseACncPtUrineOrdLabObs is a Clinical Element Model for LOINC Code: 2349-9  LOINC Name: Glucose:PrThr:Pt:Urine:Ord"/>
+    <fhirVersion value="3.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcGlucoseACncPtUrineOrdLabObs">
+            <path value="Observation"/>
+            <definition value="GlucoseACncPtUrineOrdLabObs is a Clinical Element Model for LOINC Code: 2349-9  LOINC Name: Glucose:PrThr:Pt:Urine:Ord"/>
+        </element>
+        <element id="Observation:hspcGlucoseMCncPtBldQnLabObs.key">
+            <path value="Observation.code"/>
+            <short value="key"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="2349-9"/>
+                    <display value="Glucose [Presence] in Urine"/>
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Observation:hspcGlucoseACncPtUrineOrdLabObs.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="valueQuantity"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+			<binding>
+				<strength value="preferred"/>
+				<reference value="http://hl7.org/fhir/hspc/ValueSet/PosNeg"/>
+			</binding>
+        </element>
+        <element id="Observation:hspcGlucoseACncPtUrineOrdLabObs.extension:reportingPriority">
+            <path value="Observation.extension"/>
+            <short value="reportingPriority"/>
+            <comment value="Key code for this model: ReportingPriority_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefintion/reportingPriority"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSetReference>
+                    <reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriority"/>
+                </valueSetReference>
+            </binding>
+        </element>
+        <element id="Observation:hspcGlucoseACncPtUrineOrdLabObs.interpretation">
+            <path value="Observation.interpretation"/>
+            <short value="interpretation"/>
+            <comment value="Key code for this model: Interpretation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+			<binding>
+				<strength value="preferred"/>
+				<valueSetReference>
+					<reference value="http://hl7.org/fhir/hspc/ValueSet/abnInt-NumericNom"/>
+				</valueSetReference>
+			</binding>
+        </element>
+        <element id="Observation:hspcGlucoseACncPtUrineOrdLabObs.extension:deltaFlag">
+            <path value="Observation.extension"/>
+            <short value="deltaFlag"/>
+            <comment value="Key code for this model: DeltaFlag_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSetReference>
+                    <reference value="http://hl7.org/fhir/hspc/ValueSet/deltaFlag-numericNom"/>
+                </valueSetReference>
+            </binding>
+        </element>
+		<element id="Observation:jspcglucosePostCoordinated.responsibleObserver">
+			<path value="Observation.performer"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.identifier.name"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+		</element>
+        <element id="Observation:hspcglucosePostCoordinated.responsibleObserver">
+            <path value="Observation.performer"/>
+            <short value="performingTech"/>
+			<sliceName value="performingTech"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+        </element>
+        <element id="Observation:hspcglucosePostCoordinated.responsibleObserver">
+            <path value="Observation.performer"/>
+            <short value="performingOrganizationMedicalDirector"/>
+			<sliceName value="performingOrganizationMedicalDirector"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/practitioner"/>
+            </type>
+			<mapping>
+				<identity value="LOINC"/>
+				<map value="Performing laboratory medical director. 68990-1."/>
+			</mapping>
+        </element>
+        <element id="Observation:hspcglucosePostCoordinated.responsibleObserver">
+            <path value="Observation.performer"/>
+            <short value="performingLaboratory"/>
+			<sliceName value="performingLaboratory"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/organization"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGlucoseACncPtUrineOrdLabObs.resultedDateTime">
+            <path value="Observation.issued"/>
+            <short value="resultedDateTime"/>
+            <comment value="Key code for this model: ResultedDateTime_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGlucoseACncPtUrineOrdLabObs.modifierExtension:focalSubject">
+            <path value="Observation.modifierExtension"/>
+            <short value="focalSubject"/>
+            <comment value="Key code for this model: FocalSubject_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="modifierExtension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGlucoseACncPtUrineOrdLabObs.referenceRangeNar">
+            <path value="Observation.referenceRange.text"/>
+            <short value="referenceRangeNar"/>
+            <comment value="Key code for this model: ReferenceRangeNar_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGlucoseACncPtUrineOrdLabObs:identifier">
+            <path value="Observation.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Observation.identifier"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation:hspcGlucoseACncPtUrineOrdLabObs:accessionNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="accessionnumber"/>
+            <short value="accessionNumber"/>
+            <comment value="Key code for this model: AccessionNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGlucoseACncPtUrineOrdLabObs:fillerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="fillerordernumber"/>
+            <short value="fillerOrderNumber"/>
+            <comment value="Key code for this model: FillerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcGlucoseACncPtUrineOrdLabObs:placerOrderNumber">
+            <path value="Observation.identifier"/>
+            <sliceName value="placerordernumber"/>
+            <short value="placerOrderNumber"/>
+            <comment value="Key code for this model: PlacerOrderNumber_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+		<element id="Observation:hspcGlucoseACncPtUrineOrdLabObs:bodySite">
+			<path value="Observation.bodySite"/>
+			<sliceName value="bodySite"/>
+			<min value="0"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation:hspcGlucoseACncPtUrineOrdLabObs:related">
+			<path value="Observation.related"/>
+			<sliceName value="related"/>
+			<min value="0"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation:hspcGlucoseACncPtUrineOrdLabObs:component">
+			<path value="Observation.component"/>
+			<sliceName value="component"/>
+			<min value="0"/>
+			<max value="0"/>
+		</element>
+    </differential>
+</StructureDefinition>
