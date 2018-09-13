@@ -5,7 +5,7 @@
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
   </meta>
-  <url value="http://hl7.org/fhir/fpar/ValueSet/abnInt-NumericNom"/>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/abnIntNumericNom"/>
   <version value="0.01"/>
   <name value="Abnormal Interpretation Numeric Nom"/>
   <status value="draft"/>
