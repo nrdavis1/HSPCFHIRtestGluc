@@ -12,6 +12,41 @@
   <copyright value="HSPC"/>
     <package>
         <name value="Profiles in this Implementation Guide" />	
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="Extension/deltaFlag"/>
+				<display value ="Delta Flag"/>
+			</sourceReference>	
+		</resource>	
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="Extension/focalSubject"/>
+				<display value ="Focal Subject"/>
+			</sourceReference>	
+		</resource>	
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="Extension/reportingPriority"/>
+				<display value ="Reporting Priority"/>
+			</sourceReference>	
+		</resource>	
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="Extension/updateDateTime"/>
+				<display value ="Update Date Time"/>
+			</sourceReference>	
+		</resource>
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="Extension/glucoseChallenge"/>
+				<display value ="Glucose Challenge"/>
+			</sourceReference>	
+		</resource>
 		<!-- <resource>		
 			<example value="false"/>	
 			<sourceReference>	
@@ -10406,6 +10441,62 @@
 				<reference value ="StructureDefinition/GlucosePostCoordinated"/>
 				<display value="Glucose Post Coordinated."/>
 			</sourceReference>
+		</resource>	
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="StructureDefinition/Organization"/>
+				<display value ="HSPC Organization"/>
+			</sourceReference>	
+		</resource>	
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="StructureDefinition/Practitioner"/>
+				<display value ="HSPC Practitioner"/>
+			</sourceReference>	
+		</resource>	
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="ValueSet/abnIntNumericNom"/>
+				<display value ="Abnormal Interpretation Numeric Nominal value set"/>
+			</sourceReference>	
+		</resource>	
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="ValueSet/deltaFlagnumericNom"/>
+				<display value ="Delta Flag Numeric Nominal value set"/>
+			</sourceReference>	
+		</resource>	
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="ValueSet/LabNullFlavor"/>
+				<display value ="Lab Null Flavor value set"/>
+			</sourceReference>	
+		</resource>	
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="ValueSet/PosNeg"/>
+				<display value ="Positive Negative value set"/>
+			</sourceReference>	
+		</resource>	
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="ValueSet/reportingPriority"/>
+				<display value ="Reporting Priority value set"/>
+			</sourceReference>	
+		</resource>	
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="ValueSet/glucoseChallengeVS"/>
+				<display value ="Glucose Challenge value set"/>
+			</sourceReference>	
 		</resource>
     </package>
 </ImplementationGuide>

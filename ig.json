@@ -37,6 +37,7 @@
 	"Extension/focalSubject":{"base":"Extension-focalSubject.html"},
 	"Extension/reportingPriority":{"base":"Extension-reportingPriority.html"},
 	"Extension/updateDateTime":{"base":"Extension-updateDateTime.html"},
+	"Extension/glucoseChallenge":{"base":"Extension-glucoseChallenge.html"},
 	"StructureDefinition/AcerNegundoAbIgEACncPtSerQnLabObs":{"base":"StructureDefinition-AcerNegundoAbIgEACncPtSerQnLabObs.html"},
 	"StructureDefinition/AcetaminophenMCncPtSerPlasQnLabObs":{"base":"StructureDefinition-AcetaminophenMCncPtSerPlasQnLabObs.html"},
 	"StructureDefinition/AcetoneMCncPtSerPlasQnLabObs":{"base":"StructureDefinition-AcetoneMCncPtSerPlasQnLabObs.html"},
@@ -1529,7 +1530,7 @@
 	"ValueSet/deltaFlagnumericNom":{"base":"ValueSet-deltaFlagnumericNom.html"},
 	"ValueSet/LabNullFlavor":{"base":"ValueSet-LabNullFlavor.html"},
 	"ValueSet/PosNeg":{"base":"ValueSet-PosNeg.html"},
-	"ValueSet/reportingPriority":{"base":"ValueSet-reportingPriority.hmtl"}
-
+	"ValueSet/reportingPriority":{"base":"ValueSet-reportingPriority.hmtl"},
+	"ValueSet/glucoseChallengeVS":{"base":"ValueSet-glucoseChallengeVS.html"}
   }
 }
