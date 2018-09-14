@@ -1530,7 +1530,7 @@
 	"ValueSet/deltaFlagnumericNom":{"base":"ValueSet-deltaFlagnumericNom.html"},
 	"ValueSet/LabNullFlavor":{"base":"ValueSet-LabNullFlavor.html"},
 	"ValueSet/PosNeg":{"base":"ValueSet-PosNeg.html"},
-	"ValueSet/reportingPriority":{"base":"ValueSet-reportingPriority.hmtl"},
+	"ValueSet/reportingPriorityVS":{"base":"ValueSet-reportingPriorityVS.hmtl"},
 	"ValueSet/glucoseChallengeVS":{"base":"ValueSet-glucoseChallengeVS.html"}
   }
 }

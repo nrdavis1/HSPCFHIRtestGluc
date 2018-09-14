@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extensions-focalSubject"/>
-  <url value="http://hl7.org/fhir/hspc/StructureDefinition/extensions-focalSubject"/>
+  <id value="focalSubject"/>
+  <url value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
   <version value="2.0.0"/>
   <name value="FocalSubject"/>
   <title value="FocalSubject"/>
@@ -109,7 +109,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/extensions-focalSubject"/>
+      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -156,7 +156,7 @@
     </element>
     <element id="Extension:focalsubject.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/extensions-focalSubject"/>
+      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/focalSubject"/>
     </element>
     <element id="Extension:focalsubject.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>

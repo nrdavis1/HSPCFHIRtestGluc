@@ -4,15 +4,16 @@
   <url value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
   <version value="2.0.0"/>
   <name value="reportingPriority"/>
-  <title value="Reporting Priority"/>
+  <title value="reportingPriority"/>
   <status value="draft"/>
   <date value="2018-08-27"/>
-  <publisher value="Healthcare Services Platform Consortium"/>
+  <publisher value="HSPC"/>
   <description value="The set of codes that describe the urgency with which a result should be reported to a clinican."/>
   <fhirVersion value="3.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <contextType value="resource"/>
+  <context value="Observation"/>
   <context value="Encounter"/>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -53,6 +54,28 @@
       </base>
       <type>
         <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Extension:reportingPriority.extension">
+      <path value="Extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
       </type>
       <mapping>
         <identity value="rim"/>
@@ -100,7 +123,7 @@
 	  <binding>
 	  <strength value="preferred"/>
 		<valueSetReference>
-			<reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriority"/>
+			<reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriorityVS"/>
 		</valueSetReference>
 	  </binding>
     </element>
@@ -127,7 +150,7 @@
 	  <binding>
 	  <strength value="preferred"/>
 		<valueSetReference>
-			<reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriority"/>
+			<reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriorityVS"/>
 		</valueSetReference>
 	  </binding>
     </element>

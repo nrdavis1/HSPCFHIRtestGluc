@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extensions-deltaFlag"/>
-  <url value="http://hl7.org/fhir/hspc/StructureDefinition/extensions-deltaFlag"/>
+  <id value="deltaFlag"/>
+  <url value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
   <version value="2.0.0"/>
   <name value="deltaFlag"/>
   <title value="deltaFlag"/>
@@ -109,7 +109,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/extensions-deltaFlag"/>
+      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -156,7 +156,7 @@
     </element>
     <element id="Extension:deltaflag.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/extensions-deltaFlag"/>
+      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/deltaFlag"/>
     </element>
     <element id="Extension:deltaflag.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>

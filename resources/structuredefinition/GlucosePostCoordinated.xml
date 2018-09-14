@@ -230,24 +230,24 @@
         </element>
         <element id="Observation:hspcglucosePostCoordinated.extension:reportingPriority">
             <path value="Observation.extension"/>
-	    <sliceName value="reportingPriority"/>
+			<sliceName value="reportingPriority"/>
             <comment value="Key code for this model: ReportingPriority_KEY_CODE"/>
             <min value="0"/>
             <max value="1"/>
             <type>
                 <code value="extension"/>
-                <profile value="http://hl7.org/fhir/hspc/StructureDefintion/reportingPriority"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
             </type>
-            <binding>
-                <strength value="preferred"/>
-                <valueSetReference>
-                    <reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriority"/>
-                </valueSetReference>
-            </binding>
+			<binding>
+				<strength value="preferred"/>
+				<valueSetReference>
+					<reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriorityVS"/>
+				</valueSetReference>
+			</binding>
         </element>
         <element id="Observation:hspcglucosePostCoordinated.extension:deltaFlag">
             <path value="Observation.extension"/>
-	    <sliceName value="deltaFlag"/>
+			<sliceName value="deltaFlag"/>
             <comment value="Key code for this model: DeltaFlag_KEY_CODE"/>
             <min value="0"/>
             <max value="1"/>
@@ -270,24 +270,18 @@
             <max value="1"/>
             <type>
                 <code value="extension"/>
-                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/challenge"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/glucoseChallenge"/>
             </type>
+			<binding>
+				<strength value="preferred"/>
+				<valueSetReference>
+					<reference value="http://hl7.org/fhir/hspc/ValueSet/glucoseChallengeVS"/>
+				</valueSetReference>
+			</binding>
         </element>
 		<element id="Observation:hspcglucosePostCoordinated:bodySite">
 			<path value="Observation.bodySite"/>
 			<sliceName value="bodySite"/>
-			<min value="0"/>
-			<max value="0"/>
-		</element>
-		<element id="Observation:hspcglucosePostCoordinated:related">
-			<path value="Observation.related"/>
-			<sliceName value="related"/>
-			<min value="0"/>
-			<max value="0"/>
-		</element>
-		<element id="Observation:hspcglucosePostCoordinated:component">
-			<path value="Observation.component"/>
-			<sliceName value="component"/>
 			<min value="0"/>
 			<max value="0"/>
 		</element>
