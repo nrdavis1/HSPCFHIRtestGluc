@@ -214,7 +214,7 @@
         </element>
         <element id="Observation:hspcGlucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs.extension:reportingPriority">
             <path value="Observation.extension"/>
-	    <sliceName value="reportingPriority"/>
+			<sliceName value="reportingPriority"/>
             <comment value="Key code for this model: ReportingPriority_KEY_CODE"/>
             <min value="0"/>
             <max value="1"/>
@@ -225,13 +225,13 @@
             <binding>
                 <strength value="preferred"/>
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriority"/>
+                    <reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriorityVS"/>
                 </valueSetReference>
             </binding>
         </element>
         <element id="Observation:hspcGlucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs.extension:deltaFlag">
             <path value="Observation.extension"/>
-	    <sliceName value="deltaFlag"/>
+			<sliceName value="deltaFlag"/>
             <comment value="Key code for this model: DeltaFlag_KEY_CODE"/>
             <min value="0"/>
             <max value="1"/>

@@ -120,12 +120,6 @@
         <code value="CodeableConcept"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
-	  <binding>
-	  <strength value="preferred"/>
-		<valueSetReference>
-			<reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriorityVS"/>
-		</valueSetReference>
-	  </binding>
     </element>
   </snapshot>
   <differential>
@@ -147,12 +141,6 @@
         <code value="CodeableConcept"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
-	  <binding>
-	  <strength value="preferred"/>
-		<valueSetReference>
-			<reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriorityVS"/>
-		</valueSetReference>
-	  </binding>
     </element>
   </differential>
 </StructureDefinition>

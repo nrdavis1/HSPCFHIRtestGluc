@@ -224,7 +224,7 @@
             <binding>
                 <strength value="preferred"/>
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriority"/>
+                    <reference value="http://hl7.org/fhir/hspc/ValueSet/reportingPriorityVS"/>
                 </valueSetReference>
             </binding>
         </element>

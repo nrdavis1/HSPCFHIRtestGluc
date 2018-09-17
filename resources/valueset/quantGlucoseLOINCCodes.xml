@@ -2,12 +2,13 @@
 <ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
   <id value="quantGlucoseLOINCCodes"/>
   <meta>
-    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
   <url value="http://hl7.org/fhir/hspc/ValueSet/quantGlucoseLOINCCodes"/>
     <version value="0.01"/>
     <name value="HSPC Quantitative Glucose LOINC codes"/>
     <status value="draft"/>
+	<experimental value="true"/>
     <date value="2018-08-28"/>
     <publisher value="HSPC"/>
     <description value="Select LOINC codes. The LOINC codes that represent quantitative glucose tests."/>

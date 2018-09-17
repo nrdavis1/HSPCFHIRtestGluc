@@ -465,14 +465,6 @@
       <type>
         <code value="uri"/>
       </type>
-      <example>
-        <label value="General"/>
-        <valueUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
-      </example>
-      <example>
-        <label value="General"/>
-        <valueUri value="NPI preferred, Tax id is allowed, Local id is allowed in addition to &#39;authoritative&#39; identifier"/>
-      </example>
       <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
@@ -1794,7 +1786,7 @@
         <strength value="example"/>
         <description value="Specific qualification the practitioner has to provide a service"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/anzsco-occupations"/>
+          <reference value="http://hl7.org/fhir/ValueSet/v2-2.7-0360"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1947,7 +1939,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the method by which an individual communicates"/>
         <valueSetReference>
-          <reference value="ValueSet/communicationMode"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/communicationMode"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2046,10 +2038,6 @@
       <type>
         <code value="uri"/>
       </type>
-      <example>
-        <label value="General"/>
-        <valueUri value="NPI preferred, Tax id is allowed, Local id is allowed in addition to &#39;authoritative&#39; identifier"/>
-      </example>
       <mustSupport value="true"/>
       <isModifier value="false"/>
     </element>
@@ -2169,7 +2157,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the method by which an individual communicates"/>
         <valueSetReference>
-          <reference value="ValueSet/communicationMode"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/communicationMode"/>
         </valueSetReference>
       </binding>
     </element>

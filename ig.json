@@ -1531,6 +1531,7 @@
 	"ValueSet/LabNullFlavor":{"base":"ValueSet-LabNullFlavor.html"},
 	"ValueSet/PosNeg":{"base":"ValueSet-PosNeg.html"},
 	"ValueSet/reportingPriorityVS":{"base":"ValueSet-reportingPriorityVS.hmtl"},
-	"ValueSet/glucoseChallengeVS":{"base":"ValueSet-glucoseChallengeVS.html"}
+	"ValueSet/glucoseChallengeVS":{"base":"ValueSet-glucoseChallengeVS.html"},
+	"ValueSet/communicationMode":{"base":"ValueSet-communicationMode"}
   }
 }

@@ -7,7 +7,12 @@
   <status value="draft" />
   <date value="2018-04-19"/>
   <publisher value="Health Services Platform Consortium"/>
-  <contact value=""/>
+  <contact>
+	<telecom>
+		<system value="email"/>
+		<value value="HSPC@HSPConsortium.org"/>
+	</telecom>
+  </contact>
   <description value="The Implementation Guide resource profile for HSPC"/>
   <copyright value="HSPC"/>
     <package>
@@ -10497,6 +10502,13 @@
 				<reference value ="ValueSet/glucoseChallengeVS"/>
 				<display value ="Glucose Challenge value set"/>
 			</sourceReference>	
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/communicationMode"/>
+				<display value="Communication Mode value set"/>
+			</sourceReference>
 		</resource>
     </package>
 </ImplementationGuide>

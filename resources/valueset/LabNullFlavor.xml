@@ -2,12 +2,13 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="LabNullFlavor"/>
   <meta>
-    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
   <url value="http://hl7.org/fhir/hspc/ValueSet/LabNullFlavor"/>
   <version value="0.01"/>
   <name value="HSPC Lab Null Flavor"/>
   <status value="draft"/>
+  <experimental value="true"/>
   <date value="2014-06-25"/>
   <publisher value="Intermountain Healthcare"/>
   <contact>

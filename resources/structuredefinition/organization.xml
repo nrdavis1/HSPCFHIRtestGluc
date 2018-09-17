@@ -480,10 +480,6 @@
       <type>
         <code value="uri"/>
       </type>
-      <example>
-        <label value="General"/>
-        <valueUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
-      </example>
       <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
@@ -1591,13 +1587,6 @@
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <binding>
-        <strength value="preferred"/>
-        <description value="Codes that represent kinds of organizations."/>
-        <valueSetReference>
-          <reference value="ValueSet/organization-organizationtype"/>
-        </valueSetReference>
-      </binding>
     </element>
     <element id="Organization:hspcorganization.identifier">
       <path value="Organization.identifier"/>
