@@ -1,0 +1,273 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hspc",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/hspc/ImplementationGuide/hspc</pre><div><p>The Implementation Guide resource profile for HSPC</p>\n</div></div>"
+  },
+  "url": "http://hl7.org/fhir/hspc/ImplementationGuide/hspc",
+  "version": "1.0",
+  "name": "HSPC Implementation Guide",
+  "status": "draft",
+  "date": "2018-04-19T00:00:00-06:00",
+  "publisher": "Health Services Platform Consortium",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "HSPC@HSPConsortium.org"
+        }
+      ]
+    }
+  ],
+  "description": "The Implementation Guide resource profile for HSPC",
+  "copyright": "HSPC",
+  "fhirVersion": "3.0.1",
+  "package": [
+    {
+      "id": "p1",
+      "name": "Profiles in this Implementation Guide",
+      "resource": [
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/deltaFlag",
+            "display": "Delta Flag"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/focalSubject",
+            "display": "Focal Subject"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/reportingPriority",
+            "display": "Reporting Priority"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/updateDateTime",
+            "display": "Update Date Time"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/glucoseChallenge",
+            "display": "Glucose Challenge"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-Glucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/Glucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs",
+            "display": "Glucose [Mass/volume] in Serum or Plasma 1 hour post 75 g glucose PO"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-GlucoseMCncPtBldQnLabObs.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/GlucoseMCncPtBldQnLabObs",
+            "display": "Glucose [Mass/volume] in Blood"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-GlucoseMCncPtBldQnTeststripautomatedLabObs.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/GlucoseMCncPtBldQnTeststripautomatedLabObs",
+            "display": "Glucose [Mass/volume] in Blood by Automated test strip|Glucose [Mass/volume] in Blood by Test strip auto"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-GlucoseMCncPtBldQnTestStripManualLabObs.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/GlucoseMCncPtBldQnTestStripManualLabObs",
+            "display": "Glucose [Mass/volume] in Blood by Test strip manual"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-GlucoseMCncPtUrineQnLabObs.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/GlucoseMCncPtUrineQnLabObs",
+            "display": "Glucose [Mass/volume] in Urine"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-GlucoseMCncPtUrineQnTestStripLabObs.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/GlucoseMCncPtUrineQnTestStripLabObs",
+            "display": "Glucose [Mass/volume] in Urine by Test strip"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-PotassiumSCncPtSerPlasQnLabObs.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/PotassiumSCncPtSerPlasQnLabObs",
+            "display": "Potassium [Moles/volume] in Serum or Plasma"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/GlucosePostCoordinated",
+            "display": "Glucose Post Coordinated."
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/Organization",
+            "display": "HSPC Organization"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/Practitioner",
+            "display": "HSPC Practitioner"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-abnIntNumericNom.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/abnIntNumericNom",
+            "display": "Abnormal Interpretation Numeric Nominal value set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-deltaFlagnumericNom.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/deltaFlagnumericNom",
+            "display": "Delta Flag Numeric Nominal value set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-LabNullFlavor.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/LabNullFlavor",
+            "display": "Lab Null Flavor value set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-PosNeg.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/PosNeg",
+            "display": "Positive Negative value set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-reportingPriorityVS.hmtl"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/reportingPriorityVS",
+            "display": "Reporting Priority value set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-glucoseChallengeVS.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/glucoseChallengeVS",
+            "display": "Glucose Challenge value set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-communicationMode"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/communicationMode",
+            "display": "Communication Mode value set"
+          }
+        }
+      ]
+    }
+  ]
+}
