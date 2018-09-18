@@ -1,0 +1,206 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "36821bea-2e7c-427a-a0be-e5232a0c02a2",
+  "meta" : {
+    "lastUpdated" : "2018-09-17T11:13:16.408-06:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://hl7.org/fhir/hspc/ValueSet/abnIntNumericNom",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "abnIntNumericNom",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://hl7.org/fhir/v3/ObservationInterpretation version 2016-11-11</p><p>All codes from system <a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationInterpretation/cs.html\"><code>http://hl7.org/fhir/v3/ObservationInterpretation</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-ObservationInterpretation-H\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationInterpretation/cs.html#v3-ObservationInterpretation-H\">H</a></td><td>Higher Than Normal</td><td>The result for a quantitative observation is above the upper limit of the reference range (as defined for the respective test procedure).\r\n\n                        Synonym: Above high normal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-ObservationInterpretation-L\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationInterpretation/cs.html#v3-ObservationInterpretation-L\">L</a></td><td>Lower Than Normal</td><td>The result for a quantitative observation is below the lower limit of the reference range (as defined for the respective test procedure).\r\n\n                        Synonym: Below low normal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-ObservationInterpretation-A\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationInterpretation/cs.html#v3-ObservationInterpretation-A\">A</a></td><td>Abnormal</td><td>The result or observation value is outside the reference range or expected norm (as defined for the respective test procedure).\r\n\n                        [Note: Typically applies to non-numeric results.]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-ObservationInterpretation-HH\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationInterpretation/cs.html#v3-ObservationInterpretation-HH\">HH</a></td><td>Panic High</td><td>The result for a quantitative observation is above a reference level at which immediate action should be considered for patient safety (as defined for the respective test procedure).\r\n\n                        Synonym: Above upper panic limits.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-ObservationInterpretation-LL\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationInterpretation/cs.html#v3-ObservationInterpretation-LL\">LL</a></td><td>Panic Low</td><td>The result for a quantitative observation is below a reference level at which immediate action should be considered for patient safety (as defined for the respective test procedure).\r\n\n                        Synonym: Below lower panic limits.</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/hspc/ValueSet/abnIntNumericNom",
+      "version" : "0.01",
+      "name" : "Abnormal Interpretation Numeric Nom",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2015-04-14T00:00:00-06:00",
+      "publisher" : "HSPC",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "other",
+          "value" : "http://healtcaresoa.org"
+        }]
+      }],
+      "description" : "HL7 V3:ObservationInterpretation OID: 2.16.840.1.113883.5.83 + SNOMED CT SNOMED CT concepts from the Degree findings (qualifier value)272520006, Presence findings (qualifier value)260411009, Absence findings (qualifier value)272519000",
+      "copyright" : "IHC",
+      "expansion" : {
+        "identifier" : "urn:uuid:9643e14e-2054-4e17-8cfc-badada3dd833",
+        "timestamp" : "2018-09-13T09:56:21-06:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "profile",
+          "valueUri" : "http://hl7.org/fhir/ExpansionProfile/dc8fd4bc-091a-424a-8a3b-6198ef146891"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/v3/ObservationInterpretation|2016-11-11"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/v3/ObservationInterpretation",
+          "code" : "H",
+          "display" : "Higher Than Normal"
+        },
+        {
+          "system" : "http://hl7.org/fhir/v3/ObservationInterpretation",
+          "code" : "L",
+          "display" : "Lower Than Normal"
+        },
+        {
+          "system" : "http://hl7.org/fhir/v3/ObservationInterpretation",
+          "code" : "A",
+          "display" : "Abnormal"
+        },
+        {
+          "system" : "http://hl7.org/fhir/v3/ObservationInterpretation",
+          "code" : "HH",
+          "display" : "Panic High"
+        },
+        {
+          "system" : "http://hl7.org/fhir/v3/ObservationInterpretation",
+          "code" : "LL",
+          "display" : "Panic Low"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/hspc/ValueSet/deltaFlagnumericNom",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "deltaFlagnumericNom",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://hl7.org/fhir/v3/ObservationInterpretation version 2016-11-11</p><p>All codes from system <a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationInterpretation/cs.html\"><code>http://hl7.org/fhir/v3/ObservationInterpretation</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-ObservationInterpretation-U\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationInterpretation/cs.html#v3-ObservationInterpretation-U\">U</a></td><td>Significant Change Up</td><td>The current result has increased from the previous result for a quantitative observation (the change is significant as defined in the respective test procedure).</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-ObservationInterpretation-D\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationInterpretation/cs.html#v3-ObservationInterpretation-D\">D</a></td><td>Significant Change Down</td><td>The current result has decreased from the previous result for a quantitative observation (the change is significant as defined in the respective test procedure).</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-ObservationInterpretation-B\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationInterpretation/cs.html#v3-ObservationInterpretation-B\">B</a></td><td>Better</td><td>The current result or observation value has improved compared to the previous result or observation value (the change is significant as defined in the respective test procedure).\r\n\n                        [Note: This can be applied to quantitative or qualitative observations.]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-ObservationInterpretation-W\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationInterpretation/cs.html#v3-ObservationInterpretation-W\">W</a></td><td>Worse</td><td>The current result or observation value has degraded compared to the previous result or observation value (the change is significant as defined in the respective test procedure).\r\n\n                        [Note: This can be applied to quantitative or qualitative observations.]</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/hspc/ValueSet/deltaFlagnumericNom",
+      "version" : "0.01",
+      "name" : "Abnormal Interpretation Numeric Nom",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2014-06-25T00:00:00-06:00",
+      "publisher" : "HSPC",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "other",
+          "value" : "http://healtcaresoa.org"
+        }]
+      }],
+      "description" : "HL7 V3:ObservationInterpretation OID: 2.16.840.1.113883.5.83 + SNOMED CT SNOMED CT concepts from the Degree findings (qualifier value)272520006, Presence findings (qualifier value)260411009, Absence findings (qualifier value)272519000",
+      "copyright" : "IHC",
+      "expansion" : {
+        "identifier" : "urn:uuid:2325ae8a-e049-46d6-90ad-23e07f987f50",
+        "timestamp" : "2018-09-13T09:56:21-06:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "profile",
+          "valueUri" : "http://hl7.org/fhir/ExpansionProfile/dc8fd4bc-091a-424a-8a3b-6198ef146891"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/v3/ObservationInterpretation|2016-11-11"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/v3/ObservationInterpretation",
+          "code" : "U",
+          "display" : "Significant Change Up"
+        },
+        {
+          "system" : "http://hl7.org/fhir/v3/ObservationInterpretation",
+          "code" : "D",
+          "display" : "Significant Change Down"
+        },
+        {
+          "system" : "http://hl7.org/fhir/v3/ObservationInterpretation",
+          "code" : "B",
+          "display" : "Better"
+        },
+        {
+          "system" : "http://hl7.org/fhir/v3/ObservationInterpretation",
+          "code" : "W",
+          "display" : "Worse"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/hspc/ValueSet/communicationMode",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "communicationMode",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://hl7.org/fhir/v3/LanguageAbilityMode version 2016-11-11</p><p>All codes from system <a href=\"http://hl7.org/fhir/2017Jan/v3/LanguageAbilityMode/cs.html\"><code>http://hl7.org/fhir/v3/LanguageAbilityMode</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-LanguageAbilityMode-ESGN\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/LanguageAbilityMode/cs.html#v3-LanguageAbilityMode-ESGN\">ESGN</a></td><td>Expressed signed</td><td>Expressed signed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-LanguageAbilityMode-ESP\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/LanguageAbilityMode/cs.html#v3-LanguageAbilityMode-ESP\">ESP</a></td><td>Expressed spoken</td><td>Expressed spoken</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-LanguageAbilityMode-EWR\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/LanguageAbilityMode/cs.html#v3-LanguageAbilityMode-EWR\">EWR</a></td><td>Expressed written</td><td>Expressed written</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-LanguageAbilityMode-RSGN\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/LanguageAbilityMode/cs.html#v3-LanguageAbilityMode-RSGN\">RSGN</a></td><td>Received signed</td><td>Received signed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-LanguageAbilityMode-RSP\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/LanguageAbilityMode/cs.html#v3-LanguageAbilityMode-RSP\">RSP</a></td><td>Received spoken</td><td>Received spoken</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-v3-LanguageAbilityMode-RWR\"> </a><a href=\"http://hl7.org/fhir/2017Jan/v3/LanguageAbilityMode/cs.html#v3-LanguageAbilityMode-RWR\">RWR</a></td><td>Received written</td><td>Received written</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/hspc/ValueSet/communicationMode",
+      "name" : "HSPC Communication Mode",
+      "status" : "draft",
+      "date" : "2018-09-17T11:13:16-06:00",
+      "publisher" : "HSPC",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "other",
+          "value" : "http://healthcaresoa.org"
+        }]
+      }],
+      "description" : "A set of codes that describe the method by which an individual communicates.  These values are taken from the HL7 v3 LanguageAbilityMode code system.",
+      "expansion" : {
+        "identifier" : "urn:uuid:3779ad6e-91e3-4985-aa2a-30ce4f51487c",
+        "timestamp" : "2018-09-17T11:13:41-06:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "profile",
+          "valueUri" : "http://hl7.org/fhir/ExpansionProfile/dc8fd4bc-091a-424a-8a3b-6198ef146891"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/v3/LanguageAbilityMode|2016-11-11"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/v3/LanguageAbilityMode",
+          "code" : "ESGN",
+          "display" : "Expressed signed"
+        },
+        {
+          "system" : "http://hl7.org/fhir/v3/LanguageAbilityMode",
+          "code" : "ESP",
+          "display" : "Expressed spoken"
+        },
+        {
+          "system" : "http://hl7.org/fhir/v3/LanguageAbilityMode",
+          "code" : "EWR",
+          "display" : "Expressed written"
+        },
+        {
+          "system" : "http://hl7.org/fhir/v3/LanguageAbilityMode",
+          "code" : "RSGN",
+          "display" : "Received signed"
+        },
+        {
+          "system" : "http://hl7.org/fhir/v3/LanguageAbilityMode",
+          "code" : "RSP",
+          "display" : "Received spoken"
+        },
+        {
+          "system" : "http://hl7.org/fhir/v3/LanguageAbilityMode",
+          "code" : "RWR",
+          "display" : "Received written"
+        }]
+      }
+    }
+  }]
+}

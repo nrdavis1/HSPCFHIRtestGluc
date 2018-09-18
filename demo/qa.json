@@ -1,0 +1,12 @@
+﻿{
+  "url": "http://hl7.org/fhir/hspc/ImplementationGuide/hspc",
+  "name": "HSPC Implementation Guide",
+  "package-id": "hl7.fhir.hspc",
+  "ig-ver": "1.0",
+  "date": "Mon, 17 Sep, 2018 11:13:16 -0600",
+  "errs": 82,
+  "warnings": 2,
+  "hints": 0,
+  "version": "3.0.1",
+  "tool": "3.4.0-13844"
+}

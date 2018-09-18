@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="reportingPriorityVS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>HSPC Reporiting Priority value set</h2><div><p>Select SNOMED CT codes. The values that describe the level of urgency for reporting observation results to a clinician.</p>
+</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=709122007">709122007</a></td><td>ASAP - ass soon as possible</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=50811001">50811001</a></td><td>Routine</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49499008">49499008</a></td><td>Stat</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=103391001">103391001</a></td><td>Urgent</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/hspc/ValueSet/reportingPriorityVS"/>
+  <version value="0.01"/>
+  <name value="HSPC Reporiting Priority value set"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2018-03-29T00:00:00-06:00"/>
+  <publisher value="HSPC"/>
+  <description value="Select SNOMED CT codes. The values that describe the level of urgency for reporting observation results to a clinician."/>
+  <immutable value="true"/>
+  <copyright value="TBD"/>
+  <extensible value="true"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="709122007"/>
+        <display value="ASAP - ass soon as possible"/>
+      </concept>
+      <concept>
+        <code value="50811001"/>
+        <display value="Routine"/>
+      </concept>
+      <concept>
+        <code value="49499008"/>
+        <display value="Stat"/>
+      </concept>
+      <concept>
+        <code value="103391001"/>
+        <display value="Urgent"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

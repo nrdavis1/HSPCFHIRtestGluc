@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/hspc/ValueSet/communicationMode> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "communicationMode"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC Communication Mode</h2><div><p>A set of codes that describe the method by which an individual communicates.  These values are taken from the HL7 v3 LanguageAbilityMode code system.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/2017Jan/v3/LanguageAbilityMode/cs.html\"><code>http://hl7.org/fhir/v3/LanguageAbilityMode</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/LanguageAbilityMode/cs.html#v3-LanguageAbilityMode-ESGN\">ESGN</a></td><td>Expressed signed</td><td>Expressed signed</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/LanguageAbilityMode/cs.html#v3-LanguageAbilityMode-ESP\">ESP</a></td><td>Expressed spoken</td><td>Expressed spoken</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/LanguageAbilityMode/cs.html#v3-LanguageAbilityMode-EWR\">EWR</a></td><td>Expressed written</td><td>Expressed written</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/LanguageAbilityMode/cs.html#v3-LanguageAbilityMode-RSGN\">RSGN</a></td><td>Received signed</td><td>Received signed</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/LanguageAbilityMode/cs.html#v3-LanguageAbilityMode-RSP\">RSP</a></td><td>Received spoken</td><td>Received spoken</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/LanguageAbilityMode/cs.html#v3-LanguageAbilityMode-RWR\">RWR</a></td><td>Received written</td><td>Received written</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/hspc/ValueSet/communicationMode"];
+  fhir:ValueSet.name [ fhir:value "HSPC Communication Mode"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2018-09-17T11:13:16-06:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HSPC"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://healthcaresoa.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "A set of codes that describe the method by which an individual communicates.  These values are taken from the HL7 v3 LanguageAbilityMode code system."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/v3/LanguageAbilityMode" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ESGN" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Expressed signed" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ESP" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Expressed spoken" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "EWR" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Expressed written" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "RSGN" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Received signed" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "RSP" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Received spoken" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "RWR" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Received written" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/hspc/ValueSet/communicationMode.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/hspc/ValueSet/communicationMode.ttl> .
+
+# -------------------------------------------------------------------------------------
+
