@@ -220,7 +220,7 @@
             <max value="1"/>
             <type>
                 <code value="extension"/>
-                <profile value="http://hl7.org/fhir/hspc/StructureDefintion/reportingPriority"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/reportingPriority"/>
             </type>
             <binding>
                 <strength value="preferred"/>
@@ -246,6 +246,17 @@
                 </valueSetReference>
             </binding>
         </element>
+		<element id="Observation:hspcGlucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs.extension:updateDateTime">
+			<path value="Observation.extension"/>
+			<sliceName value="updateDateTime"/>
+			<comment value="Key code for this model: UpdateDateTime_KEY_CODE"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="extension"/>
+				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/updateDateTime"/>
+			</type>
+		</element>
 		<element id="Observation:hspcGlucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs:bodySite">
 			<path value="Observation.bodySite"/>
 			<sliceName value="bodySite"/>
