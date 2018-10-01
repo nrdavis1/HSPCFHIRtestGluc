@@ -23,15 +23,22 @@
         </element>
         <element id="Observation:hspcGlucoseMCncPtBldQnLabObs.key">
             <path value="Observation.code"/>
-            <short value="key"/>
-            <fixedCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="2345-7"/>
-                    <display value="Glucose:MCnc:Pt:Ser/Plas:Qn"/>
-                </coding>
-            </fixedCodeableConcept>
         </element>
+		<element id="Observation:hspcGlucoseMCncPtBldQnLabObs.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcGlucoseMCncPtBldQnLabObs.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:hspcGlucoseMCncPtBldQnLabObs.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="2345-7"/>
+		</element>
+		<element id="Observation:hspcGlucoseMCncPtBldQnLabObs.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Glucose [Mass/volume] in Serum or Plasma"/>
+		</element>
         <element id="Observation:hspcglucosePostCoordinated.valueQuantity">
             <path value="Observation.valueQuantity"/>
             <short value="valueQuantity"/>

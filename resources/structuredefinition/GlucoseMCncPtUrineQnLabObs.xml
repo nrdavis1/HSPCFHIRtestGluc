@@ -21,15 +21,22 @@
         </element>
         <element id="Observation:hspcGlucoseMCncPtUrineQnLabObs.key">
             <path value="Observation.code"/>
-            <short value="key"/>
-            <fixedCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="2350-7"/>
-                    <display value="glucose [Mass/volume] in Urine"/>
-                </coding>
-            </fixedCodeableConcept>
         </element>
+		<element id="Observation:hspcGlucoseMCncPtUrineQnLabObs.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcGlucoseMCncPtUrineQnLabObs.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:hspcGlucoseMCncPtUrineQnLabObs.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="2350-7"/>
+		</element>
+		<element id="Observation:hspcGlucoseMCncPtUrineQnLabObs.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Glucose [Mass/volume] in Urine"/>
+		</element>
         <element id="Observation:hspcGlucoseMCncPtUrineQnLabObs.valueQuantity">
             <path value="Observation.valueQuantity"/>
             <short value="valueQuantity"/>

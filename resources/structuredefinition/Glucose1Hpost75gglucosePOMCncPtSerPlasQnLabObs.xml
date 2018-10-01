@@ -19,17 +19,24 @@
             <path value="Observation"/>
             <definition value="Glucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs is a Clinical Element Model for LOINC Code: 1507-3 LOINC Name: Glucose1hp75gGlcPOSerPl-mCmc"/>
         </element>
-        <element id="Observation:hspcGlucoseMCncPtBldQnLabObs.key">
+        <element id="Observation:hspcGlucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs.key">
             <path value="Observation.code"/>
-            <short value="key"/>
-            <fixedCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="1507-3"/>
-                    <display value="Glucose1hp75gGlcPOSerPl-mCmc"/>
-                </coding>
-            </fixedCodeableConcept>
         </element>
+		<element id="Observation:hspcGlucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcGlucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:hspcGlucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="1507-3"/>
+		</element>
+		<element id="Observation:hspcGlucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Glucose [Mass/volume] in Serum or Plasma --1 hour post 75 g glucose PO"/>
+		</element>
         <element id="Observation:hspcGlucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs.valueQuantity">
             <path value="Observation.valueQuantity"/>
             <short value="valueQuantity"/>
