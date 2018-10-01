@@ -22,21 +22,28 @@
         <element id="Observation:hspcGlucoseMCncPtUrineQnTestStripLabObs.key">
             <path value="Observation.code"/>
         </element>
-		<element id="Observation:hspcGlucoseMCncPtUrineQnTestStripLabObs.code.coding">
+		<element id="Observation:GlucoseMCncPtUrineQnTestStripLabObs.code.coding">
 			<path value="Observation.code.coding"/>
 		</element>
-		<element id="Observation:hspcGlucoseMCncPtUrineQnTestStripLabObs.code.coding.system">
+		<element id="Observation:GlucoseMCncPtUrineQnTestStripLabObs.code.coding.system">
 			<path value="Observation.code.coding.system"/>
 			<fixedUri value="http://loinc.org"/>
 		</element>
-		<element id="Observation:hspcGlucoseMCncPtUrineQnTestStripLabObs.code.coding.code">
+		<element id="Observation:GlucoseMCncPtUrineQnTestStripLabObs.code.coding.code">
 			<path value="Observation.code.coding.code"/>
 			<fixedCode value="5792-7"/>
 		</element>
-		<element id="Observation:hspcGlucoseMCncPtUrineQnTestStripLabObs.code.coding.display">
+		<element id="Observation:GlucoseMCncPtUrineQnTestStripLabObs.code.coding.display">
 			<path value="Observation.code.coding.display"/>
 			<fixedString value="Glucose [Mass/volume] in Urine by Test Strip"/>
 		</element>
+        <element id="Observation:hspcGlucoseMCncPtUrineQnTestStripLabObs.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="valueQuantity"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
 		<element id="Observation:hspcGlucoseMCncPtUrineQnTestStripLabObs.valueQuantity.system">
 			<path value="Observation.valueQuantity.system"/>
 			<short value="valueQuantity.system"/>
