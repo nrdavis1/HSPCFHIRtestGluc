@@ -1,0 +1,336 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/hspc/ImplementationGuide/hspc> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "hspc"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/hspc/ImplementationGuide/hspc</pre><div><p>The Implementation Guide resource profile for HSPC</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/hspc/ImplementationGuide/hspc"];
+  fhir:ImplementationGuide.version [ fhir:value "1.0"];
+  fhir:ImplementationGuide.name [ fhir:value "HSPC Implementation Guide"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.date [ fhir:value "2018-04-19T00:00:00-06:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "Health Services Platform Consortium"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "HSPC@HSPConsortium.org" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "The Implementation Guide resource profile for HSPC"];
+  fhir:ImplementationGuide.copyright [ fhir:value "HSPC"];
+  fhir:ImplementationGuide.fhirVersion [ fhir:value "3.0.1"];
+  fhir:ImplementationGuide.package [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "p1" ];
+     fhir:ImplementationGuide.package.name [ fhir:value "Profiles in this Implementation Guide" ];
+     fhir:ImplementationGuide.package.resource [
+       fhir:index 0;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/Extension/deltaFlag>;
+         fhir:Reference.reference [ fhir:value "Extension/deltaFlag" ];
+         fhir:Reference.display [ fhir:value "Delta Flag" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/Extension/focalSubject>;
+         fhir:Reference.reference [ fhir:value "Extension/focalSubject" ];
+         fhir:Reference.display [ fhir:value "Focal Subject" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/Extension/reportingPriority>;
+         fhir:Reference.reference [ fhir:value "Extension/reportingPriority" ];
+         fhir:Reference.display [ fhir:value "Reporting Priority" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/Extension/updateDateTime>;
+         fhir:Reference.reference [ fhir:value "Extension/updateDateTime" ];
+         fhir:Reference.display [ fhir:value "Update Date Time" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/Extension/glucoseChallenge>;
+         fhir:Reference.reference [ fhir:value "Extension/glucoseChallenge" ];
+         fhir:Reference.display [ fhir:value "Glucose Challenge" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-Glucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/StructureDefinition/Glucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Glucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs" ];
+         fhir:Reference.display [ fhir:value "Glucose [Mass/volume] in Serum or Plasma 1 hour post 75 g glucose PO" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-GlucoseMCncPtBldQnLabObs.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/StructureDefinition/GlucoseMCncPtBldQnLabObs>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/GlucoseMCncPtBldQnLabObs" ];
+         fhir:Reference.display [ fhir:value "Glucose [Mass/volume] in Blood" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-GlucoseMCncPtBldQnTeststripautomatedLabObs.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/StructureDefinition/GlucoseMCncPtBldQnTeststripautomatedLabObs>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/GlucoseMCncPtBldQnTeststripautomatedLabObs" ];
+         fhir:Reference.display [ fhir:value "Glucose [Mass/volume] in Blood by Automated test strip|Glucose [Mass/volume] in Blood by Test strip auto" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-GlucoseMCncPtBldQnTestStripManualLabObs.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/StructureDefinition/GlucoseMCncPtBldQnTestStripManualLabObs>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/GlucoseMCncPtBldQnTestStripManualLabObs" ];
+         fhir:Reference.display [ fhir:value "Glucose [Mass/volume] in Blood by Test strip manual" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-GlucoseMCncPtUrineQnLabObs.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/StructureDefinition/GlucoseMCncPtUrineQnLabObs>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/GlucoseMCncPtUrineQnLabObs" ];
+         fhir:Reference.display [ fhir:value "Glucose [Mass/volume] in Urine" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-GlucoseMCncPtUrineQnTestStripLabObs.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/StructureDefinition/GlucoseMCncPtUrineQnTestStripLabObs>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/GlucoseMCncPtUrineQnTestStripLabObs" ];
+         fhir:Reference.display [ fhir:value "Glucose [Mass/volume] in Urine by Test strip" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-PotassiumSCncPtSerPlasQnLabObs.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/StructureDefinition/PotassiumSCncPtSerPlasQnLabObs>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PotassiumSCncPtSerPlasQnLabObs" ];
+         fhir:Reference.display [ fhir:value "Potassium [Moles/volume] in Serum or Plasma" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/StructureDefinition/GlucosePostCoordinated>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/GlucosePostCoordinated" ];
+         fhir:Reference.display [ fhir:value "Glucose Post Coordinated." ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/StructureDefinition/Organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Organization" ];
+         fhir:Reference.display [ fhir:value "HSPC Organization" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/StructureDefinition/Practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Practitioner" ];
+         fhir:Reference.display [ fhir:value "HSPC Practitioner" ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-abnIntNumericNom.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/ValueSet/abnIntNumericNom>;
+         fhir:Reference.reference [ fhir:value "ValueSet/abnIntNumericNom" ];
+         fhir:Reference.display [ fhir:value "Abnormal Interpretation Numeric Nominal value set" ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-deltaFlagnumericNom.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/ValueSet/deltaFlagnumericNom>;
+         fhir:Reference.reference [ fhir:value "ValueSet/deltaFlagnumericNom" ];
+         fhir:Reference.display [ fhir:value "Delta Flag Numeric Nominal value set" ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-LabNullFlavor.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/ValueSet/LabNullFlavor>;
+         fhir:Reference.reference [ fhir:value "ValueSet/LabNullFlavor" ];
+         fhir:Reference.display [ fhir:value "Lab Null Flavor value set" ]
+       ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-PosNeg.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/ValueSet/PosNeg>;
+         fhir:Reference.reference [ fhir:value "ValueSet/PosNeg" ];
+         fhir:Reference.display [ fhir:value "Positive Negative value set" ]
+       ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-reportingPriorityVS.hmtl" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/ValueSet/reportingPriorityVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/reportingPriorityVS" ];
+         fhir:Reference.display [ fhir:value "Reporting Priority value set" ]
+       ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-glucoseChallengeVS.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/ValueSet/glucoseChallengeVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/glucoseChallengeVS" ];
+         fhir:Reference.display [ fhir:value "Glucose Challenge value set" ]
+       ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-communicationMode" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/hspc/ValueSet/communicationMode>;
+         fhir:Reference.reference [ fhir:value "ValueSet/communicationMode" ];
+         fhir:Reference.display [ fhir:value "Communication Mode value set" ]
+       ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/hspc/Extension/deltaFlag> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/Extension/focalSubject> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/Extension/reportingPriority> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/Extension/updateDateTime> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/Extension/glucoseChallenge> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/StructureDefinition/Glucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/StructureDefinition/GlucoseMCncPtBldQnLabObs> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/StructureDefinition/GlucoseMCncPtBldQnTeststripautomatedLabObs> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/StructureDefinition/GlucoseMCncPtBldQnTestStripManualLabObs> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/StructureDefinition/GlucoseMCncPtUrineQnLabObs> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/StructureDefinition/GlucoseMCncPtUrineQnTestStripLabObs> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/StructureDefinition/PotassiumSCncPtSerPlasQnLabObs> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/StructureDefinition/GlucosePostCoordinated> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/StructureDefinition/Organization> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/StructureDefinition/Practitioner> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/ValueSet/abnIntNumericNom> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/ValueSet/deltaFlagnumericNom> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/ValueSet/LabNullFlavor> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/ValueSet/PosNeg> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/ValueSet/reportingPriorityVS> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/ValueSet/glucoseChallengeVS> a fhir:hspc .
+
+<http://hl7.org/fhir/hspc/ValueSet/communicationMode> a fhir:hspc .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/hspc/ImplementationGuide/hspc.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/hspc/ImplementationGuide/hspc.ttl> .
+
+# -------------------------------------------------------------------------------------
+
