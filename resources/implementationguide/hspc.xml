@@ -10443,10 +10443,17 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value ="StructureDefinition/GlucosePostCoordinated"/>
-				<display value="Glucose Post Coordinated."/>
+				<reference value ="StructureDefinition/GlucosePostCoordinatedPattern"/>
+				<display value="Glucose Post Coordinated Pattern."/>
 			</sourceReference>
 		</resource>	
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value ="StructureDefinition/Glucose1Hpost75gglucosePOMCncPtSerPlasQnLabObsPostCoord"/>
+				<display value="Glucose 1 hr post 75g glucose PO MCnc Pt SerPlas Qn LabObs Post Coord."/>
+			</sourceReference>
+		</resource>
 		<resource>		
 			<example value="false"/>	
 			<sourceReference>	
@@ -10508,6 +10515,13 @@
 			<sourceReference>
 				<reference value="ValueSet/communicationMode"/>
 				<display value="Communication Mode value set"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/glucoseChallengeLOINCVS"/>
+				<display value="Glucose Challenge LOINC value set"/>
 			</sourceReference>
 		</resource>
     </package>
