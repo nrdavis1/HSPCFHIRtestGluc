@@ -1528,6 +1528,7 @@
 	"StructureDefinition/Practitioner":{"base":"StructureDefinition-Practitioner.html"},
 	"StructureDefinition/GlucosePostCoordinatedPattern":{"base":"StructureDefinition-GlucosePostCoordinatedPattern.html"},
 	"StructureDefinition/Glucose1Hpost75gglucosePOMCncPtSerPlasQnLabObsPostCoord":{"base":"StructureDefinition-Glucose1Hpost75gglucosePOMCncPtSerPlasQnLabObsPostCoord.html"},
+	"StructureDefinition/otherGlucosePostCoordinatedPattern":{"base":"StructureDefinition-otherGlucosePostCoordinatedPattern.html"},
 	"ValueSet/glucoseChallengeLOINCVS":{"base":"ValueSet-glucoseChallengeLOINCVS.html"},
 	"ValueSet/abnIntNumericNom":{"base":"ValueSet-abnIntNumericNom.html"},
 	"ValueSet/deltaFlagnumericNom":{"base":"ValueSet-deltaFlagnumericNom.html"},
@@ -1535,6 +1536,7 @@
 	"ValueSet/PosNeg":{"base":"ValueSet-PosNeg.html"},
 	"ValueSet/reportingPriorityVS":{"base":"ValueSet-reportingPriorityVS.hmtl"},
 	"ValueSet/glucoseChallengeVS":{"base":"ValueSet-glucoseChallengeVS.html"},
-	"ValueSet/communicationMode":{"base":"ValueSet-communicationMode"}
+	"ValueSet/communicationMode":{"base":"ValueSet-communicationMode.html"},
+	"ValueSet/labDataAbsentReasonVS":{"base":"ValueSet-labDataAbsentReasonVS.html"}
   }
 }

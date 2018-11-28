@@ -26,10 +26,27 @@
         </element>
 		<element id="Observation:hspcglucosePostCoordinated.code.coding">
 			<path value="Observation.code.coding"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="Observation.code.coding"/>
+				</discriminator>
+				<ordered value="false"/>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Observation:hspcglucosePostCoordinated.code.coding:LOINCcode">
+			<path value="Observation.code.coding"/>
+			<sliceName value="LOINC code"/>
+			<short value="LOINC code"/>
+			<min value="1"/>
+			<max value="1"/>
 		</element>
 		<element id="Observation:hspcglucosePostCoordinated.code.coding.system">
 			<path value="Observation.code.coding.system"/>
 			<fixedUri value="http://loinc.org"/>
+			<min value="1"/>
+			<max value="1"/>
 		</element>
 		<element id="Observation:hspcglucosePostCoordinated.code.coding.code">
 			<path value="Observation.code.coding.code"/>
@@ -39,6 +56,25 @@
 					<reference value="http://hl7.org/fhir/hspc/ValueSet/glucoseChallengeLOINCVS"/>
 				</valueSetReference>
 			</binding>
+			<min value="1"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcglucosePostCoordinated.code.coding:otherCode">
+			<path value="Observation.code.coding"/>
+			<sliceName value="otherCode"/>
+			<short value="Codes other than LOINC"/>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="Observation:hspcglucosePostCoordinated.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<min value="1"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcglucosePostCoordinated.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<min value="1"/>
+			<max value="1"/>
 		</element>
         <element id="Observation:hspcglucosePostCoordinated.valueQuantity">
             <path value="Observation.valueQuantity"/>
@@ -84,6 +120,16 @@
 				</valueSetReference>
 			</binding>
         </element>
+		<element id="Observation:hspcglucosePostCoordinated.dataAbsentReason">
+			<path value="Observation.dataAbsentReason"/>
+			<sliceName value="dataAbsentReason"/>
+			<binding>
+				<strength value="preferred"/>
+				<valueSetReference>
+					<reference value="http://hl7.org/fhir/hspc/ValueSet/labDataAbsentReasonVS"/>
+				</valueSetReference>
+			</binding>
+		</element>
 		<element id="Observation:hspcglucosePostCoordinated.responsibleObserver">
 			<path value="Observation.performer"/>
             <slicing>
@@ -155,12 +201,6 @@
 		<element id="Observation:hspcglucosePostCoordinated.method:testMethod">
 			<path value="Observation.method"/>
 			<short value="testMethod"/>
-			<binding>
-				<strength value="preferred"/>
-				<valueSetReference>
-					<reference value="http://hl7.org/fhir/hspc/ValueSet/glucoseTestMethod"/>
-				</valueSetReference>
-			</binding>
 			<mapping>
 			    <identity value="LOINC"/>
 				<map value="Lab test method 85069-3"/>
@@ -182,7 +222,7 @@
         <element id="Observation:hspcglucosePostCoordinated:accessionNumber">
             <path value="Observation.identifier"/>
             <sliceName value="accessionnumber"/>
-            <short value="accessionNumber"/>
+            <short value="Accession Number"/>
             <min value="0"/>
             <max value="1"/>
             <type>
@@ -192,7 +232,7 @@
         <element id="Observation:hspcglucosePostCoordinated:fillerOrderNumber">
             <path value="Observation.identifier"/>
             <sliceName value="fillerordernumber"/>
-            <short value="fillerOrderNumber"/>
+            <short value="Filler Order Number"/>
             <min value="0"/>
             <max value="1"/>
             <type>
@@ -202,17 +242,17 @@
         <element id="Observation:hspcglucosePostCoordinated:placerOrderNumber">
             <path value="Observation.identifier"/>
             <sliceName value="placerordernumber"/>
-            <short value="placerOrderNumber"/>
+            <short value="Placer Order Number"/>
             <min value="0"/>
             <max value="1"/>
             <type>
                 <code value="Identifier"/>
             </type>
         </element>
-        <element id="Observation:hspcglucosePostCoordinated:testId">
+        <element id="Observation:hspcglucosePostCoordinated:orderedTestId">
             <path value="Observation.identifier"/>
-            <sliceName value="testId"/>
-            <short value="testId"/>
+            <sliceName value="orderedTestId"/>
+            <short value="Ordered Test Id"/>
             <min value="0"/>
             <max value="1"/>
             <type>
@@ -253,7 +293,7 @@
             <path value="Observation.extension"/>
             <sliceName value="challenge"/>
             <comment value="Key code for this model: Challenge_KEY_CODE"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="extension"/>
@@ -269,6 +309,12 @@
 		<element id="Observation:hspcglucosePostCoordinated:bodySite">
 			<path value="Observation.bodySite"/>
 			<sliceName value="bodySite"/>
+			<min value="0"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation:hspcglucosePostCoordinated:component">
+			<path value="Observation.component"/>
+			<sliceName value="component"/>
 			<min value="0"/>
 			<max value="0"/>
 		</element>

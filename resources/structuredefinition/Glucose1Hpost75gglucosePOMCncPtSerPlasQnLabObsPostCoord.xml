@@ -265,7 +265,22 @@
                     <display value="1H post 75 g glucose PO"/>
                 </coding>
 			</fixedCodeableConcept>
-        </element>
+        </element><!-- 
+		<element id="Observation:Glucose1Hpost75gglucosePOMCncPtSerPlasQnLabObsPostCoord.code.coding">
+			<path value="Observation.extension.coding"/>
+		</element>
+		<element id="Observation:Glucose1Hpost75gglucosePOMCncPtSerPlasQnLabObsPostCoord.code.coding.system">
+			<path value="Observation.extension.coding.system"/>
+			<fixedUri value="http://snomed.info/sct"/>
+		</element>
+		<element id="Observation:Glucose1Hpost75gglucosePOMCncPtSerPlasQnLabObsPostCoord.code.coding.code">
+			<path value="Observation.extension.coding.code"/>
+			<fixedCode value="703766008"/>
+		</element>
+		<element id="Observation:hspcGlucose1Hpost75gglucosePOMCncPtSerPlasQnLabObs.code.coding.display">
+			<path value="Observation.extension.coding.display"/>
+			<fixedString value="1H post 75 g glucose PO"/>
+		</element> -->
 		<element id="Observation:Glucose1Hpost75gglucosePOMCncPtSerPlasQnLabObsPostCoord:bodySite">
 			<path value="Observation.bodySite"/>
 			<sliceName value="bodySite"/>
